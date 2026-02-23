@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.7a5a52b4.css",
-    "main.js": "/static/js/main.f10aaadc.js",
-    "static/media/center.png": "/static/media/center.6a7c0a4fcf124b5d0141.png",
-    "static/media/relations.jpg": "/static/media/relations.1bafe185670fe4561d15.jpg",
-    "static/media/slide2.jpg": "/static/media/slide2.b24c2ad222bba121383d.jpg",
-    "static/media/slide3.jpg": "/static/media/slide3.97c5b03c1ca6b1bc964d.jpg",
-    "static/media/cta-bg.jpg": "/static/media/cta-bg.451e893fff0d998a5c49.jpg",
-    "static/media/slide1.jpg": "/static/media/slide1.218bf238760aa9a54137.jpg",
-    "static/media/slide4.jpg": "/static/media/slide4.418c6f7fbbc3e5295ff4.jpg",
-    "static/media/depression.jpg": "/static/media/depression.d86e13f4a3b14a24dcc1.jpg",
-    "static/media/fears.jpg": "/static/media/fears.8ffa6662ea575520ea9a.jpg",
-    "static/media/logo.svg": "/static/media/logo.36234936ac9dd6ed02a8816819cc3f31.svg",
-    "static/media/wa.svg": "/static/media/wa.e9005c2dc4a3da43920dfa83c1c0fd97.svg",
-    "static/media/vk.svg": "/static/media/vk.1d35eac8a74239ca722ed5f46f2af401.svg",
-    "static/media/tg.svg": "/static/media/tg.13533387310c8229738b6168894819f8.svg",
-    "index.html": "/index.html",
-    "main.7a5a52b4.css.map": "/static/css/main.7a5a52b4.css.map",
-    "main.f10aaadc.js.map": "/static/js/main.f10aaadc.js.map"
+    "main.css": "/react-solt/static/css/main.86202ec6.css",
+    "main.js": "/react-solt/static/js/main.47ce74d3.js",
+    "static/media/center.png": "/react-solt/static/media/center.6a7c0a4fcf124b5d0141.png",
+    "static/media/relations.jpg": "/react-solt/static/media/relations.1bafe185670fe4561d15.jpg",
+    "static/media/slide2.jpg": "/react-solt/static/media/slide2.b24c2ad222bba121383d.jpg",
+    "static/media/slide3.jpg": "/react-solt/static/media/slide3.97c5b03c1ca6b1bc964d.jpg",
+    "static/media/cta-bg.jpg": "/react-solt/static/media/cta-bg.451e893fff0d998a5c49.jpg",
+    "static/media/slide1.jpg": "/react-solt/static/media/slide1.218bf238760aa9a54137.jpg",
+    "static/media/slide4.jpg": "/react-solt/static/media/slide4.418c6f7fbbc3e5295ff4.jpg",
+    "static/media/depression.jpg": "/react-solt/static/media/depression.d86e13f4a3b14a24dcc1.jpg",
+    "static/media/fears.jpg": "/react-solt/static/media/fears.8ffa6662ea575520ea9a.jpg",
+    "static/media/logo.svg": "/react-solt/static/media/logo.36234936ac9dd6ed02a8816819cc3f31.svg",
+    "static/media/wa.svg": "/react-solt/static/media/wa.e9005c2dc4a3da43920dfa83c1c0fd97.svg",
+    "static/media/vk.svg": "/react-solt/static/media/vk.1d35eac8a74239ca722ed5f46f2af401.svg",
+    "static/media/tg.svg": "/react-solt/static/media/tg.13533387310c8229738b6168894819f8.svg",
+    "index.html": "/react-solt/index.html",
+    "main.86202ec6.css.map": "/react-solt/static/css/main.86202ec6.css.map",
+    "main.47ce74d3.js.map": "/react-solt/static/js/main.47ce74d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a5a52b4.css",
-    "static/js/main.f10aaadc.js"
+    "static/css/main.86202ec6.css",
+    "static/js/main.47ce74d3.js"
   ]
 }
