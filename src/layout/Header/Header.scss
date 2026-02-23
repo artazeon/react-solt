@@ -1,0 +1,113 @@
+.header {
+  width: 100%;
+  padding: 20px 0;
+  background: #fff;
+  border-bottom: 1px solid #f2f2f2;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  /* LOGO */
+
+  &__logo img {
+    height: 50px;
+    transition: 0.3s ease;
+
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(75%) sepia(80%) saturate(400%)
+        hue-rotate(5deg);
+      transform: scale(1.05);
+    }
+  }
+
+  /* NAV */
+
+  &__nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+
+    /* Hover — цвет становится активным */
+    &:hover {
+      color: var(--accent-color);
+    }
+
+    /* Плиточный эффект */
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 3px;
+      background: var(--accent-color);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+      border-radius: 4px;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  }
+
+  /* ACTIONS */
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* SOCIALS */
+
+  &__socials {
+    display: flex;
+    gap: 12px;
+
+    a img {
+      width: 22px;
+      height: 22px;
+      transition: 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2);
+        filter: brightness(0) saturate(100%) invert(75%) sepia(80%)
+          saturate(400%) hue-rotate(5deg);
+      }
+    }
+  }
+
+  /* BUTTON */
+
+  &__button {
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    background: var(--accent-color);
+    color: #222;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover {
+      background: #e0ad3f;
+      transform: translateY(-2px);
+    }
+  }
+}

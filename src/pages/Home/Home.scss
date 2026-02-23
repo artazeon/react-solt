@@ -1,0 +1,286 @@
+.home {
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* HERO */
+
+  &__hero {
+    padding: 140px 0;
+    text-align: center;
+    background: #f5f8f8;
+  }
+
+  &__title {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+
+  /* ABOUT LAYOUT */
+
+  &__about {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__about-content {
+    flex: 1;
+  }
+
+  &__about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  @media (max-width: 992px) {
+    .home__about {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .home__about-image img {
+      max-width: 100%;
+    }
+  }
+
+  /* SECTIONS */
+
+  &__section {
+    padding: 100px 0;
+  }
+
+  &__section--gray {
+    background: color-mix(in srgb, var(--accent-color) 12%, white);
+  }
+
+  &__heading {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    font-size: 18px;
+    max-width: 700px;
+    color: #555;
+  }
+
+  /* GRID */
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+  }
+
+  &__card {
+    position: relative;
+    height: 240px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    transition:
+      transform 0.4s ease,
+      box-shadow 0.4s ease;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  /* Фоновая картинка */
+  &__card-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition:
+      transform 0.6s ease,
+      filter 0.6s ease;
+    z-index: 1;
+  }
+
+  /* Zoom + Blur */
+  &__card:hover .home__card-bg {
+    transform: scale(1.1);
+    filter: blur(3px);
+  }
+
+  /* Overlay */
+  &__card-overlay {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 25px;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.3),
+      transparent
+    );
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+  }
+
+  /* ============================= */
+  /* CTA SECTION */
+  /* ============================= */
+
+  &__cta-section {
+    position: relative;
+    padding: 140px 20px;
+    text-align: center;
+    background-image: url('../../assets/images/cta-bg.jpg'); /* ← потом подставишь свою картинку */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  /* Затемняющий слой */
+  &__cta-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+  }
+
+  /* Контент поверх */
+  &__cta {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    color: white;
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      opacity: 0.85;
+      margin-bottom: 35px;
+      line-height: 1.6;
+    }
+  }
+
+  /* ============================= */
+  /* ADVANTAGES */
+  /* ============================= */
+
+  &__section--accent {
+    background: color-mix(in srgb, var(--accent-color) 12%, white);
+  }
+
+  &__advantages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+  }
+
+  /* ЛЕВЫЙ ТЕКСТ */
+
+  &__advantages-info {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  &__advantages-info .home__heading {
+    margin-bottom: 20px;
+  }
+
+  &__advantages-info .home__text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+  }
+
+  /* ПРАВАЯ СЕТКА */
+
+  &__advantages-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  /* КАРТОЧКИ */
+
+  &__advantage {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 20px;
+    box-shadow: 0 18px 25px rgba(0, 0, 0, 0.24);
+    border-left: 4px solid var(--accent-color);
+    transition: all 0.3s ease;
+    background-color: #ffc44e;
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  /* ============================= */
+  /* АДАПТИВ */
+  /* ============================= */
+
+  @media (max-width: 1024px) {
+    &__advantages {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &__advantages-grid {
+      width: 100%;
+      grid-template-columns: 1fr;
+    }
+
+    &__advantages-info {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+}

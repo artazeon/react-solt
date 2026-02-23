@@ -1,0 +1,67 @@
+.footer {
+  background-color: #f8f8f8;
+  padding: 60px 0 20px;
+  margin-top: 80px;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+
+  &__brand {
+    max-width: 300px;
+  }
+
+  &__logo {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    color: #666;
+    font-size: 14px;
+  }
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: #444;
+    margin-bottom: 8px;
+    transition: 0.3s;
+
+    &:hover {
+      color: #7a9e9f;
+    }
+  }
+
+  &__contacts p {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #555;
+  }
+
+  &__bottom {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+  }
+}
