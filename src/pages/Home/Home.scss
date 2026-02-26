@@ -481,3 +481,97 @@
     color: var(--accent-color);
   }
 }
+
+/* ============================= */
+/* HERO SWIPER NAVIGATION */
+/* ============================= */
+
+.hero-swiper {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 55px !important;
+    height: 55px !important;
+    background: var(--accent-color) !important;
+    border-radius: 50% !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 🔥 КРАСИМ SVG */
+  .swiper-button-next svg,
+  .swiper-button-prev svg {
+    width: 18px;
+    height: 18px;
+    color: #fff !important; /* ← ВОТ ЭТО КЛЮЧЕВОЕ */
+    fill: currentColor;
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    transform: scale(1.1);
+  }
+
+  .swiper-button-disabled {
+    opacity: 0.4 !important;
+  }
+}
+
+/* ============================= */
+/* GLOBAL SWIPER NAV (HOME PAGE) */
+/* ============================= */
+
+.home {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 55px !important;
+    height: 55px !important;
+    background: var(--accent-color) !important;
+    border-radius: 50% !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper-button-next svg,
+  .swiper-button-prev svg {
+    width: 18px;
+    height: 18px;
+    color: #fff !important;
+    fill: currentColor;
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+  }
+
+  .swiper-button-disabled {
+    opacity: 0.4 !important;
+  }
+}
+
+/* ============================= */
+/* SWIPER PAGINATION */
+/* ============================= */
+
+.home {
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #cfcfcf;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--accent-color);
+    width: 26px;
+    border-radius: 20px;
+  }
+}
