@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-solt/static/css/main.cb6be76f.css",
-    "main.js": "/react-solt/static/js/main.4bec343b.js",
+    "main.css": "/react-solt/static/css/main.d781e4b5.css",
+    "main.js": "/react-solt/static/js/main.c949e1e4.js",
     "static/media/center.png": "/react-solt/static/media/center.6a7c0a4fcf124b5d0141.png",
     "static/media/spec1.png": "/react-solt/static/media/spec1.6a7c0a4fcf124b5d0141.png",
     "static/media/relations.jpg": "/react-solt/static/media/relations.1bafe185670fe4561d15.jpg",
@@ -17,11 +17,11 @@
     "static/media/vk.svg": "/react-solt/static/media/vk.1d35eac8a74239ca722ed5f46f2af401.svg",
     "index.html": "/react-solt/index.html",
     "static/media/tg.svg": "/react-solt/static/media/tg.13533387310c8229738b6168894819f8.svg",
-    "main.cb6be76f.css.map": "/react-solt/static/css/main.cb6be76f.css.map",
-    "main.4bec343b.js.map": "/react-solt/static/js/main.4bec343b.js.map"
+    "main.d781e4b5.css.map": "/react-solt/static/css/main.d781e4b5.css.map",
+    "main.c949e1e4.js.map": "/react-solt/static/js/main.c949e1e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb6be76f.css",
-    "static/js/main.4bec343b.js"
+    "static/css/main.d781e4b5.css",
+    "static/js/main.c949e1e4.js"
   ]
 }
