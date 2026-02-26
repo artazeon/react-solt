@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import './Header.scss'
 import logo from '../../assets/logo.svg'
 
@@ -7,8 +8,10 @@ import vk from '../../assets/icons/vk.svg'
 import wa from '../../assets/icons/wa.svg'
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
-    <header className='header'>
+    <header className={`header ${menuOpen ? 'header--open' : ''}`}>
       <div className='header__container'>
         {/* LEFT BLOCK */}
         <div className='header__brand'>
@@ -62,6 +65,11 @@ const Header = () => {
           </div>
 
           <button className='btn'>Записаться</button>
+        </div>
+        <div className='header__burger' onClick={() => setMenuOpen(!menuOpen)}>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </header>

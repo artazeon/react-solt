@@ -1,13 +1,66 @@
 .footer {
-  background-color: #f8f8f8;
-  padding: 60px 0 20px;
-  margin-top: 80px;
+  background: linear-gradient(135deg, #969595, #1f1f1f);
+  padding: 100px 0 30px;
+  margin-top: 100px;
+  color: #ffffff;
+  position: relative;
 
   &__container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
   }
+
+  &__logo img {
+    height: 60px;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(75%) sepia(80%) saturate(400%)
+        hue-rotate(5deg);
+      transform: scale(1.05);
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+  }
+
+  &__socials a img {
+    width: 22px;
+    height: 22px;
+    transition: 0.3s ease;
+    filter: brightness(0) invert(1);
+  }
+
+  &__socials a:hover img {
+    transform: scale(1.2);
+    filter: brightness(0) saturate(100%) invert(75%) sepia(80%) saturate(400%)
+      hue-rotate(5deg);
+  }
+
+  &__button {
+    margin-top: 10px;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 0.7;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+      color: var(--accent-color);
+      transform: translateX(5px);
+    }
+  }
+
+  /* TOP */
 
   &__top {
     display: flex;
@@ -16,23 +69,30 @@
     flex-wrap: wrap;
   }
 
+  /* BRAND */
+
   &__brand {
-    max-width: 300px;
+    max-width: 320px;
   }
 
   &__logo {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 15px;
   }
 
   &__description {
-    color: #666;
     font-size: 14px;
+    line-height: 1.7;
+    opacity: 0.8;
   }
+
+  /* SECTIONS */
 
   &__title {
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-weight: 500;
   }
 
   &__list {
@@ -43,25 +103,47 @@
   &__link {
     display: block;
     text-decoration: none;
-    color: #444;
-    margin-bottom: 8px;
-    transition: 0.3s;
+    color: #ffffff;
+    opacity: 0.7;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
 
     &:hover {
-      color: #7a9e9f;
+      opacity: 1;
+      color: var(--accent-color);
+      transform: translateX(4px);
     }
   }
 
+  /* CONTACTS */
+
   &__contacts p {
     font-size: 14px;
-    margin-bottom: 6px;
-    color: #555;
+    margin-bottom: 8px;
+    opacity: 0.8;
   }
 
+  /* BOTTOM */
+
   &__bottom {
-    margin-top: 40px;
+    margin-top: 60px;
     text-align: center;
     font-size: 14px;
-    color: #999;
+    opacity: 0.5;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+  }
+
+  /* RESPONSIVE */
+
+  @media (max-width: 768px) {
+    &__top {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &__brand {
+      max-width: 100%;
+    }
   }
 }

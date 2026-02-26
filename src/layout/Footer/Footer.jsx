@@ -1,4 +1,8 @@
 import { Link } from 'react-router-dom'
+import logo from '../../assets/logo.svg'
+import tg from '../../assets/icons/tg.svg'
+import vk from '../../assets/icons/vk.svg'
+import wa from '../../assets/icons/wa.svg'
 import './Footer.scss'
 
 const Footer = () => {
@@ -7,10 +11,27 @@ const Footer = () => {
       <div className='footer__container'>
         <div className='footer__top'>
           <div className='footer__brand'>
-            <h3 className='footer__logo'>Solt</h3>
+            <Link to='/' className='footer__logo'>
+              <img src={logo} alt='Solt' />
+            </Link>
             <p className='footer__description'>
               Центр психологической поддержки и индивидуальной терапии.
             </p>
+            <div className='footer__socials'>
+              <a href='#'>
+                <img src={tg} alt='Telegram' />
+              </a>
+              <a href='#'>
+                <img src={vk} alt='VK' />
+              </a>
+              <a href='#'>
+                <img src={wa} alt='WhatsApp' />
+              </a>
+            </div>
+
+            <button className='btn btn--outline footer__button'>
+              Записаться
+            </button>
           </div>
 
           <div className='footer__nav'>

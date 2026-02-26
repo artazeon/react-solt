@@ -5,12 +5,12 @@ import Home from './pages/Home/Home'
 import About from './pages/About'
 import Categories from './pages/Categories'
 import Services from './pages/Services'
-import Specialists from './pages/Specialists'
+import Specialists from './pages/Specialists/Specialists'
 import Blog from './pages/Blog'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/react-solt'>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
