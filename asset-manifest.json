@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-solt/static/css/main.ad883180.css",
-    "main.js": "/react-solt/static/js/main.c949e1e4.js",
+    "main.js": "/react-solt/static/js/main.5cf2027f.js",
+    "static/media/slide3.jpg": "/react-solt/static/media/slide3.ede3089489ee55151b95.jpg",
+    "static/media/slide1.jpg": "/react-solt/static/media/slide1.dd8e98fb26d5a50e441e.jpg",
     "static/media/center.png": "/react-solt/static/media/center.6a7c0a4fcf124b5d0141.png",
     "static/media/spec1.png": "/react-solt/static/media/spec1.6a7c0a4fcf124b5d0141.png",
+    "static/media/slide4.jpg": "/react-solt/static/media/slide4.442406887a096dd9cf38.jpg",
     "static/media/relations.jpg": "/react-solt/static/media/relations.1bafe185670fe4561d15.jpg",
-    "static/media/slide2.jpg": "/react-solt/static/media/slide2.b24c2ad222bba121383d.jpg",
-    "static/media/slide3.jpg": "/react-solt/static/media/slide3.97c5b03c1ca6b1bc964d.jpg",
     "static/media/cta-bg.jpg": "/react-solt/static/media/cta-bg.451e893fff0d998a5c49.jpg",
-    "static/media/slide1.jpg": "/react-solt/static/media/slide1.218bf238760aa9a54137.jpg",
-    "static/media/slide4.jpg": "/react-solt/static/media/slide4.418c6f7fbbc3e5295ff4.jpg",
+    "static/media/slide2.jpg": "/react-solt/static/media/slide2.418c6f7fbbc3e5295ff4.jpg",
     "static/media/depression.jpg": "/react-solt/static/media/depression.d86e13f4a3b14a24dcc1.jpg",
     "static/media/fears.jpg": "/react-solt/static/media/fears.8ffa6662ea575520ea9a.jpg",
     "static/media/logo.svg": "/react-solt/static/media/logo.36234936ac9dd6ed02a8816819cc3f31.svg",
@@ -18,10 +18,10 @@
     "index.html": "/react-solt/index.html",
     "static/media/tg.svg": "/react-solt/static/media/tg.13533387310c8229738b6168894819f8.svg",
     "main.ad883180.css.map": "/react-solt/static/css/main.ad883180.css.map",
-    "main.c949e1e4.js.map": "/react-solt/static/js/main.c949e1e4.js.map"
+    "main.5cf2027f.js.map": "/react-solt/static/js/main.5cf2027f.js.map"
   },
   "entrypoints": [
     "static/css/main.ad883180.css",
-    "static/js/main.c949e1e4.js"
+    "static/js/main.5cf2027f.js"
   ]
 }
