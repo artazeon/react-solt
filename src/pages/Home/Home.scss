@@ -370,7 +370,7 @@
 
   &__specialists-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 40px;
   }
 
@@ -450,7 +450,7 @@
 
   &__reviews-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 40px;
   }
 
@@ -573,5 +573,37 @@
     background: var(--accent-color);
     width: 26px;
     border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home__reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .home__cta-section {
+    background-attachment: scroll;
+    padding: 90px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .home__process-number {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home__section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .home__container {
+    padding: 0 12px;
   }
 }
