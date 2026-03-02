@@ -4,7 +4,7 @@
   background: #fff;
   border-bottom: 1px solid #f2f2f2;
   position: relative;
-  z-index: 1000;
+  z-index: 10002;
 
   &__container {
     max-width: 1200px;
@@ -214,6 +214,26 @@
     &__burger {
       display: flex;
     }
+
+    /* Затемнение фона */
+    &__overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(4px);
+      z-index: 999;
+      animation: fadeIn 0.3s ease;
+    }
+
+    /* Анимация появления */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
   }
 
   /* ============================= */
@@ -280,4 +300,11 @@
     width: 100%;
     left: 0;
   }
+}
+
+/* Скрол */
+html.no-scroll,
+body.no-scroll {
+  overflow: hidden;
+  height: 100%;
 }

@@ -11,6 +11,11 @@
   gap: 60px;
   align-items: center;
   margin-bottom: 80px;
+  align-items: flex-start;
+
+  div {
+    padding-top: 20px;
+  }
 
   img {
     width: 250px;
@@ -38,16 +43,19 @@
 }
 
 .specialist-description {
+  margin-top: 60px;
+
   h2 {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    position: relative;
   }
 
   p {
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 1.2;
     color: #444;
-    white-space: pre-line; /* 👈 важно для переноса строк */
+    margin-bottom: 22px;
   }
 }
 
@@ -55,4 +63,74 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .specialist-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .specialist-description {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+.specialist-book-btn {
+  margin-top: 30px;
+  padding: 14px 28px;
+  font-size: 16px;
+}
+
+.specialist-education {
+  margin-top: 80px;
+
+  h2 {
+    margin-bottom: 25px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+    line-height: 1.7;
+  }
+
+  li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-size: 20px;
+  }
+}
+
+.specialist-format {
+  margin-top: 60px;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 10px;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  strong {
+    color: #222;
+  }
 }

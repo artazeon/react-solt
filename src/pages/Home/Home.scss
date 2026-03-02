@@ -361,6 +361,11 @@
   /* SPECIALISTS */
   /* ============================= */
 
+  &__specialists .swiper-pagination {
+    position: static;
+    margin-top: 40px;
+  }
+
   &__specialists {
     text-align: center;
   }
@@ -455,6 +460,15 @@
     gap: 40px;
   }
 
+  &__reviews .swiper-pagination {
+    position: static;
+    margin-top: 40px;
+  }
+
+  &__reviews .swiper {
+    padding-bottom: 10px;
+  }
+
   /* Карточка отзыва */
 
   &__review-card {
@@ -464,6 +478,9 @@
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
     transition: 0.3s ease;
     text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 
     &:hover {
       transform: translateY(-6px);
@@ -475,11 +492,17 @@
     line-height: 1.7;
     margin-bottom: 20px;
     color: #444;
+    flex-grow: 1;
   }
 
   &__review-name {
     font-weight: 600;
     color: var(--accent-color);
+  }
+
+  &__reviews .swiper-slide {
+    height: auto;
+    display: flex;
   }
 }
 

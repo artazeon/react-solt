@@ -26,8 +26,30 @@ const SpecialistPage = () => {
 
         <div className='specialist-description'>
           <h2>О специалисте</h2>
-          <p>{specialist.description}</p>
+          {specialist.description.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </div>
+
+        <div className='specialist-education'>
+          <h2>Образование и квалификация</h2>
+          <ul>
+            {specialist.education.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
+        <div className='specialist-education'>
+          <h2>Образование и квалификация</h2>
+          <ul>
+            {specialist.education.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
+        <button className='btn btn--primary specialist-book-btn'>
+          Записаться на консультацию
+        </button>
       </div>
     </section>
   )

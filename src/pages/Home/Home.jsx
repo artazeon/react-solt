@@ -1,23 +1,20 @@
 import './Home.scss'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { useState, useRef } from 'react'
+import { Navigation, Autoplay, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import { Navigation, Autoplay } from 'swiper/modules'
+
 import HeroSlider from '../../components/HeroSlider/HeroSlider.jsx'
 import centerImage from '../../assets/images/center.png'
 
-import { specialists } from '../../data/specialists'
+import { specialists } from '../../data/specialistsData'
 import { categories } from '../../data/categories'
 import { advantages } from '../../data/advantages'
 import { reviews } from '../../data/reviews'
 
 const Home = () => {
-  const prevRef = useRef(null)
-  const nextRef = useRef(null)
-
   return (
     <div className='home'>
       {/* HERO */}
@@ -154,10 +151,9 @@ const Home = () => {
         <div className='home__container home__specialists'>
           <h2 className='home__heading'>Наши специалисты</h2>
 
-          {specialists.length > 6 ? (
+          {specialists.length > 3 ? (
             <Swiper
-              modules={[Navigation, Autoplay]}
-              navigation
+              modules={[Autoplay, Pagination]}
               spaceBetween={30}
               slidesPerView={3}
               autoplay={{
@@ -165,6 +161,9 @@ const Home = () => {
                 disableOnInteraction: false,
               }}
               loop={true}
+              pagination={{
+                clickable: true,
+              }}
               breakpoints={{
                 1200: { slidesPerView: 3 },
                 768: { slidesPerView: 2 },
@@ -219,14 +218,42 @@ const Home = () => {
             нашими специалистами.
           </p>
 
-          <div className='home__reviews-grid'>
-            {reviews.map((review, index) => (
-              <div key={index} className='home__review-card'>
-                <p className='home__review-text'>“{review.text}”</p>
-
-                <span className='home__review-name'>— {review.name}</span>
+          <div className='home__reviews-content'>
+            {reviews.length > 2 ? (
+              <Swiper
+                modules={[Pagination, Autoplay]}
+                spaceBetween={30}
+                slidesPerView={3}
+                autoplay={{
+                  delay: 2000,
+                  disableOnInteraction: false,
+                }}
+                pagination={{ clickable: true }}
+                breakpoints={{
+                  1024: { slidesPerView: 3 },
+                  768: { slidesPerView: 2 },
+                  0: { slidesPerView: 1 },
+                }}
+              >
+                {reviews.map((review, index) => (
+                  <SwiperSlide key={index}>
+                    <div className='home__review-card'>
+                      <p className='home__review-text'>“{review.text}”</p>
+                      <span className='home__review-name'>— {review.name}</span>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            ) : (
+              <div className='home__reviews-grid'>
+                {reviews.map((review, index) => (
+                  <div key={index} className='home__review-card'>
+                    <p className='home__review-text'>“{review.text}”</p>
+                    <span className='home__review-name'>— {review.name}</span>
+                  </div>
+                ))}
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
