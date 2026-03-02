@@ -1,6 +1,7 @@
 import './Home.scss'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { useState, useRef } from 'react'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -14,6 +15,9 @@ import { advantages } from '../../data/advantages'
 import { reviews } from '../../data/reviews'
 
 const Home = () => {
+  const prevRef = useRef(null)
+  const nextRef = useRef(null)
+
   return (
     <div className='home'>
       {/* HERO */}

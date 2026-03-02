@@ -61,7 +61,7 @@ const HeroSlider = () => {
           <div className='hero-overlay'>
             <h2>Работа с любыми запросами</h2>
             <p>От тревоги до семейных кризисов.</p>
-            <Link to='/contacts' className='btn'>
+            <Link to='/contacts' className='hero-button'>
               Записаться на консультацию
             </Link>
           </div>
