@@ -20,6 +20,10 @@ const Header = () => {
     }
   }, [menuOpen])
 
+  const handleLinkClick = () => {
+    setMenuOpen(false)
+  }
+
   return (
     <>
       {menuOpen && (
@@ -36,27 +40,47 @@ const Header = () => {
 
           {/* CENTER NAV */}
           <nav className='header__nav'>
-            <Link to='/about' className='header__link'>
+            <Link
+              to='/about'
+              className='header__link'
+              onClick={handleLinkClick}
+            >
               О центре
             </Link>
 
-            <Link to='/categories' className='header__link'>
+            <Link
+              to='/categories'
+              className='header__link'
+              onClick={handleLinkClick}
+            >
               Категории
             </Link>
 
-            <Link to='/services' className='header__link'>
+            <Link
+              to='/services'
+              className='header__link'
+              onClick={handleLinkClick}
+            >
               Услуги
             </Link>
 
-            <Link to='/specialists' className='header__link'>
+            <Link
+              to='/specialists'
+              className='header__link'
+              onClick={handleLinkClick}
+            >
               Специалисты
             </Link>
 
-            <Link to='/blog' className='header__link'>
+            <Link to='/blog' className='header__link' onClick={handleLinkClick}>
               Статьи
             </Link>
 
-            <Link to='/contacts' className='header__link'>
+            <Link
+              to='/contacts'
+              className='header__link'
+              onClick={handleLinkClick}
+            >
               Контакты
             </Link>
           </nav>
