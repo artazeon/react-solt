@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-solt/static/css/main.9c1a197d.css",
-    "main.js": "/react-solt/static/js/main.c6ad1edc.js",
+    "main.css": "/react-solt/static/css/main.5d1dba5b.css",
+    "main.js": "/react-solt/static/js/main.1fdf240a.js",
     "static/media/slide3.jpg": "/react-solt/static/media/slide3.ede3089489ee55151b95.jpg",
     "static/media/loneliness.png": "/react-solt/static/media/loneliness.8b09faf5028602d10f8f.png",
     "static/media/slide1.jpg": "/react-solt/static/media/slide1.dd8e98fb26d5a50e441e.jpg",
@@ -23,11 +23,11 @@
     "static/media/vk.svg": "/react-solt/static/media/vk.1d35eac8a74239ca722ed5f46f2af401.svg",
     "index.html": "/react-solt/index.html",
     "static/media/tg.svg": "/react-solt/static/media/tg.13533387310c8229738b6168894819f8.svg",
-    "main.9c1a197d.css.map": "/react-solt/static/css/main.9c1a197d.css.map",
-    "main.c6ad1edc.js.map": "/react-solt/static/js/main.c6ad1edc.js.map"
+    "main.5d1dba5b.css.map": "/react-solt/static/css/main.5d1dba5b.css.map",
+    "main.1fdf240a.js.map": "/react-solt/static/js/main.1fdf240a.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c1a197d.css",
-    "static/js/main.c6ad1edc.js"
+    "static/css/main.5d1dba5b.css",
+    "static/js/main.1fdf240a.js"
   ]
 }
