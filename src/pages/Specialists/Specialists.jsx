@@ -37,8 +37,9 @@ const Specialists = () => {
         </div>
         <div className='specialists-grid'>
           {filteredSpecialists.map((item) => (
-            <div
-              key={`${item.id}-${selectedFilter}`}
+            <Link
+              key={item.id}
+              to={`/specialists/${item.id}`}
               className='specialist-card'
             >
               <div className='specialist-image'>
@@ -50,15 +51,14 @@ const Specialists = () => {
                 <span className='specialist-role'>{item.role}</span>
 
                 <p>{item.experience}</p>
-
-                <Link
+                <span
                   to={`/specialists/${item.id}`}
                   className='btn btn--outline'
                 >
                   Подробнее
-                </Link>
+                </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

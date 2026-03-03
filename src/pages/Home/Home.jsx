@@ -64,7 +64,7 @@ const Home = () => {
 
                 <div className='home__card-overlay'>
                   <h3>{item.title}</h3>
-                  <p>{item.text}</p>
+                  <p>{item.shortText}</p>
                 </div>
               </Link>
             ))}

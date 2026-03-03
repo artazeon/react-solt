@@ -1,5 +1,5 @@
 .contacts-page {
-  padding: 120px 20px;
+  padding: 50px 20px;
 
   .container {
     max-width: 1100px;
@@ -9,6 +9,7 @@
   h1 {
     font-size: 42px;
     margin-bottom: 30px;
+    text-align: center;
   }
 
   .contacts-intro {
@@ -16,7 +17,6 @@
     line-height: 1.8;
     margin-bottom: 60px;
     color: #555;
-    max-width: 700px;
   }
 }
 
