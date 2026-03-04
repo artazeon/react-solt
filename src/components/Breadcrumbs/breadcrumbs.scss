@@ -1,0 +1,19 @@
+.breadcrumbs {
+  padding: 20px 20px 0;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size: 16px;
+  }
+
+  span {
+    font-size: 16px;
+    color: #777;
+  }
+}

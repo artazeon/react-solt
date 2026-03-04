@@ -13,12 +13,14 @@ import Blog from './pages/Blog/Blog.jsx'
 import BlogDetail from './pages/Blog/BlogDetail.jsx'
 import Contacts from './pages/Contacts/Contacts.jsx'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop.jsx'
+import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs'
 
 function App() {
   return (
     <BrowserRouter basename='/react-solt'>
       <ScrollToTop />
       <Header />
+      <Breadcrumbs />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
