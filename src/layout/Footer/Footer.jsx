@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
+
 import logo from '../../assets/logo.svg'
 import tg from '../../assets/icons/tg.svg'
 import vk from '../../assets/icons/vk.svg'
 import wa from '../../assets/icons/wa.svg'
 import './Footer.scss'
 
-const Footer = () => {
+const Footer = ({ onBookingClick }) => {
   return (
     <footer className='footer'>
       <div className='footer__container'>
@@ -29,7 +30,11 @@ const Footer = () => {
               </a>
             </div>
 
-            <button className='btn btn--outline footer__button'>
+            <button
+              className='btn btn--outline footer__button'
+              onClick={onBookingClick}
+              className='btn'
+            >
               Записаться
             </button>
           </div>

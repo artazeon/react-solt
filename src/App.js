@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { useState } from 'react'
 import Header from './layout/Header/Header'
 import Footer from './layout/Footer/Footer'
 import Home from './pages/Home/Home'
@@ -14,12 +15,17 @@ import BlogDetail from './pages/Blog/BlogDetail.jsx'
 import Contacts from './pages/Contacts/Contacts.jsx'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop.jsx'
 import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs'
+import BookingModal from './components/BookingModal/BookingModal.jsx'
 
 function App() {
+  const [isBookingOpen, setBookingOpen] = useState(false)
+
+  const openBooking = () => setBookingOpen(true)
+  const closeBooking = () => setBookingOpen(false)
   return (
     <BrowserRouter basename='/react-solt'>
       <ScrollToTop />
-      <Header />
+      <Header onBookingClick={() => setBookingOpen(true)} />
       <Breadcrumbs />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -34,7 +40,8 @@ function App() {
         <Route path='/blog/:id' element={<BlogDetail />} />
         <Route path='/contacts' element={<Contacts />} />
       </Routes>
-      <Footer />
+      <Footer onBookingClick={() => setBookingOpen(true)} />
+      <BookingModal isOpen={isBookingOpen} onClose={closeBooking} />
     </BrowserRouter>
   )
 }

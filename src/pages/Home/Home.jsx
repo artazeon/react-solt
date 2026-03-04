@@ -1,7 +1,9 @@
 import './Home.scss'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Autoplay, Pagination } from 'swiper/modules'
+import BookingModal from '../../components/BookingModal/BookingModal.jsx'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -15,6 +17,7 @@ import { advantages } from '../../data/advantages'
 import { reviews } from '../../data/reviews'
 
 const Home = () => {
+  const [open, setOpen] = useState(false)
   return (
     <div className='home'>
       {/* HERO */}
@@ -86,7 +89,9 @@ const Home = () => {
             поддержку в комфортной и безопасной атмосфере.
           </p>
 
-          <button className='btn'>Записаться</button>
+          <button className='btn' onClick={() => setOpen(true)}>
+            Записаться
+          </button>
         </div>
       </section>
       {/* ADVANTAGES */}
@@ -256,6 +261,7 @@ const Home = () => {
             )}
           </div>
         </div>
+        <BookingModal isOpen={open} onClose={() => setOpen(false)} />
       </section>
     </div>
   )

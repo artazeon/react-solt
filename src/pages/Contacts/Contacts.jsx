@@ -1,5 +1,7 @@
 import './contacts.scss'
 
+import BookingForm from '../../components/BookingForm/BookingForm'
+
 export default function ContactsPage() {
   return (
     <section className='contacts-page'>
@@ -42,16 +44,7 @@ export default function ContactsPage() {
           <div className='contacts-form'>
             <h2>Задать вопрос</h2>
 
-            <form>
-              <input type='text' placeholder='Ваше имя *' required />
-              <input type='tel' placeholder='Ваш телефон *' required />
-              <input type='email' placeholder='Ваш Email' />
-              <textarea placeholder='Комментарий *' required></textarea>
-
-              <button type='submit' className='btn btn--primary'>
-                Отправить
-              </button>
-            </form>
+            <BookingForm />
           </div>
         </div>
 

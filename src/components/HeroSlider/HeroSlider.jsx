@@ -31,8 +31,8 @@ const HeroSlider = () => {
           <div className='hero-overlay'>
             <h2>Профессиональная поддержка</h2>
             <p>Помогаем пройти сложные жизненные этапы.</p>
-            <Link to='/contacts' className='hero-button'>
-              Записаться на консультацию
+            <Link to='/categories' className='hero-button'>
+              Категории запросов
             </Link>
           </div>
         </div>
@@ -46,8 +46,8 @@ const HeroSlider = () => {
           <div className='hero-overlay'>
             <h2>Безопасное пространство</h2>
             <p>Конфиденциальность и поддержка в каждой консультации.</p>
-            <Link to='/contacts' className='hero-button'>
-              Записаться на консультацию
+            <Link to='/services' className='hero-button'>
+              Наши услуги
             </Link>
           </div>
         </div>
@@ -61,8 +61,8 @@ const HeroSlider = () => {
           <div className='hero-overlay'>
             <h2>Работа с любыми запросами</h2>
             <p>От тревоги до семейных кризисов.</p>
-            <Link to='/contacts' className='hero-button'>
-              Записаться на консультацию
+            <Link to='/specialists' className='hero-button'>
+              Наши специалисты
             </Link>
           </div>
         </div>
@@ -75,8 +75,8 @@ const HeroSlider = () => {
           <div className='hero-overlay'>
             <h2>Работа с любыми запросами</h2>
             <p>От тревоги до семейных кризисов.</p>
-            <Link to='/contacts' className='hero-button'>
-              Записаться на консультацию
+            <Link to='/blog' className='hero-button'>
+              Полезные статьи
             </Link>
           </div>
         </div>

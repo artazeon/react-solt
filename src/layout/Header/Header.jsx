@@ -7,7 +7,7 @@ import tg from '../../assets/icons/tg.svg'
 import vk from '../../assets/icons/vk.svg'
 import wa from '../../assets/icons/wa.svg'
 
-const Header = () => {
+const Header = ({ onBookingClick }) => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
@@ -102,7 +102,9 @@ const Header = () => {
               </a>
             </div>
 
-            <button className='btn'>Записаться</button>
+            <button className='btn' onClick={onBookingClick}>
+              Записаться
+            </button>
           </div>
           <div
             className='header__burger'
