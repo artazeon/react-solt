@@ -5,7 +5,8 @@ import Home from './pages/Home/Home'
 import About from './pages/About/About.jsx'
 import Categories from './pages/Categories/Categories.jsx'
 import CategoryDetail from './pages/Categories/CategoryDetail.jsx'
-import Services from './pages/Services'
+import Services from './pages/Services/Services.jsx'
+import ServiceDetail from './pages/Services/ServiceDetail.jsx'
 import Specialists from './pages/Specialists/Specialists.jsx'
 import SpecialistPage from './pages/Specialists/SpecialistPage.jsx'
 import Blog from './pages/Blog/Blog.jsx'
@@ -24,6 +25,7 @@ function App() {
         <Route path='/categories' element={<Categories />} />
         <Route path='/categories/:id' element={<CategoryDetail />} />
         <Route path='/services' element={<Services />} />
+        <Route path='/services/:id' element={<ServiceDetail />} />
         <Route path='/specialists' element={<Specialists />} />
         <Route path='/specialists/:id' element={<SpecialistPage />} />
         <Route path='/blog' element={<Blog />} />

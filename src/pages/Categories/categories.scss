@@ -28,6 +28,10 @@
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
   transition: 0.3s ease;
 
+  display: flex; // 👈 важно
+  flex-direction: column; // 👈 вертикальная структура
+  height: 100%; // 👈 чтобы grid выравнивал
+
   &:hover {
     transform: translateY(-8px);
   }
@@ -45,6 +49,9 @@
 
 .category-content {
   padding: 25px;
+  display: flex; // 👈 добавляем
+  flex-direction: column; // 👈 вертикально
+  flex: 1; // 👈 занимает всё доступное место
 
   h3 {
     font-size: 20px;
@@ -56,6 +63,11 @@
     color: #666;
     line-height: 1.6;
     margin-bottom: 15px;
+  }
+
+  .btn {
+    margin-top: auto; // 👈 вот это прижимает кнопку вниз
+    align-self: flex-start; // 👈 чтобы НЕ растягивалась
   }
 }
 

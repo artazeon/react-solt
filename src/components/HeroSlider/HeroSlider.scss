@@ -49,7 +49,10 @@
 }
 
 @media (max-width: 480px) {
+  .hero-overlay {
+    margin: 0 20px 0 20px;
+  }
   .hero-overlay h2 {
-    font-size: 32px;
+    font-size: 28px;
   }
 }

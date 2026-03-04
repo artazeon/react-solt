@@ -1,10 +1,19 @@
 import { useState, useMemo } from 'react'
 import { specialists } from '../../data/specialistsData'
+import { categories } from '../../data/categories'
 import './specialists.scss'
 import { Link } from 'react-router-dom'
 
 const Specialists = () => {
   const [selectedFilter, setSelectedFilter] = useState('Все')
+
+  const categoryMap = useMemo(() => {
+    const map = {}
+    categories.forEach((cat) => {
+      map[cat.id] = cat.title
+    })
+    return map
+  }, [])
 
   const filters = useMemo(() => {
     const allDirections = specialists.flatMap((spec) => spec.directions || [])
@@ -31,7 +40,7 @@ const Specialists = () => {
               }`}
               onClick={() => setSelectedFilter(filter)}
             >
-              {filter}
+              {filter === 'Все' ? 'Все' : categoryMap[filter]}
             </button>
           ))}
         </div>

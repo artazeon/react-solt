@@ -1,9 +1,15 @@
 import { useParams } from 'react-router-dom'
 import { categories } from '../../data/categories'
+import { specialists } from '../../data/specialistsData'
+import { Link } from 'react-router-dom'
 import './сategoryDetail.scss'
 
 const CategoryDetail = () => {
   const { id } = useParams()
+
+  const filteredSpecialists = specialists.filter((spec) =>
+    spec.directions.includes(id),
+  )
 
   const category = categories.find((item) => item.id === id)
 
@@ -49,6 +55,36 @@ const CategoryDetail = () => {
               <li key={index}>{item}</li>
             ))}
           </ul>
+        </div>
+        <h2>Подходящие специалисты</h2>
+
+        <div className='category-specialists'>
+          <h2>Подходящие специалисты</h2>
+
+          {filteredSpecialists.length > 0 ? (
+            <div className='category-specialists__grid'>
+              {filteredSpecialists.map((spec) => (
+                <Link
+                  key={spec.id}
+                  to={`/specialists/${spec.id}`}
+                  className='category-specialists__card'
+                >
+                  <img src={spec.image} alt={spec.name} />
+
+                  <div className='category-specialists__content'>
+                    <h4>{spec.name}</h4>
+                    <span>{spec.role}</span>
+
+                    <p>{spec.experience}</p>
+
+                    <span className='btn btn--outline'>Подробнее</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <p>Пока нет специалистов</p>
+          )}
         </div>
       </div>
     </section>
