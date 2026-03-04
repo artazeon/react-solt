@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/react-solt/static/css/main.1e1d2ba5.css",
-    "main.js": "/react-solt/static/js/main.30c3e66d.js",
+    "main.css": "/react-solt/static/css/main.ee1ff7e3.css",
+    "main.js": "/react-solt/static/js/main.d482d79a.js",
     "static/media/slide3.jpg": "/react-solt/static/media/slide3.ede3089489ee55151b95.jpg",
     "static/media/loneliness.png": "/react-solt/static/media/loneliness.8b09faf5028602d10f8f.png",
+    "static/media/specialist1.png": "/react-solt/static/media/specialist1.86d2d19d455eafcc6eb3.png",
     "static/media/slide1.jpg": "/react-solt/static/media/slide1.dd8e98fb26d5a50e441e.jpg",
     "static/media/ocd.png": "/react-solt/static/media/ocd.c627f7f2d2973e58a2f6.png",
     "static/media/center.png": "/react-solt/static/media/center.6a7c0a4fcf124b5d0141.png",
@@ -13,11 +14,11 @@
     "static/media/betrayal.jpg": "/react-solt/static/media/betrayal.0c5a2a42bacaa473116b.jpg",
     "static/media/anna.jpg": "/react-solt/static/media/anna.f69fa6ac1f33a02212de.jpg",
     "static/media/cta-bg.jpg": "/react-solt/static/media/cta-bg.451e893fff0d998a5c49.jpg",
-    "static/media/service1.jpg": "/react-solt/static/media/service1.c2b7e536c10383c9b5ee.jpg",
     "static/media/apathy.jpg": "/react-solt/static/media/apathy.f0a3bcd68ee9eae3d8d8.jpg",
     "static/media/slide2.jpg": "/react-solt/static/media/slide2.418c6f7fbbc3e5295ff4.jpg",
     "static/media/selfEsteem.jpg": "/react-solt/static/media/selfEsteem.a87c986e1ad886e7928c.jpg",
     "static/media/blog1.jpg": "/react-solt/static/media/blog1.a315aca41aab2263ca88.jpg",
+    "static/media/service1.jpg": "/react-solt/static/media/service1.a315aca41aab2263ca88.jpg",
     "static/media/depression.jpg": "/react-solt/static/media/depression.d86e13f4a3b14a24dcc1.jpg",
     "static/media/fears.jpg": "/react-solt/static/media/fears.8ffa6662ea575520ea9a.jpg",
     "static/media/logo.svg": "/react-solt/static/media/logo.36234936ac9dd6ed02a8816819cc3f31.svg",
@@ -25,11 +26,11 @@
     "static/media/vk.svg": "/react-solt/static/media/vk.1d35eac8a74239ca722ed5f46f2af401.svg",
     "index.html": "/react-solt/index.html",
     "static/media/tg.svg": "/react-solt/static/media/tg.13533387310c8229738b6168894819f8.svg",
-    "main.1e1d2ba5.css.map": "/react-solt/static/css/main.1e1d2ba5.css.map",
-    "main.30c3e66d.js.map": "/react-solt/static/js/main.30c3e66d.js.map"
+    "main.ee1ff7e3.css.map": "/react-solt/static/css/main.ee1ff7e3.css.map",
+    "main.d482d79a.js.map": "/react-solt/static/js/main.d482d79a.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e1d2ba5.css",
-    "static/js/main.30c3e66d.js"
+    "static/css/main.ee1ff7e3.css",
+    "static/js/main.d482d79a.js"
   ]
 }
