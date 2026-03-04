@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-solt/static/css/main.a6b67cd5.css",
-    "main.js": "/react-solt/static/js/main.bdfd37ed.js",
+    "main.css": "/react-solt/static/css/main.4b1439b6.css",
+    "main.js": "/react-solt/static/js/main.30c3e66d.js",
     "static/media/slide3.jpg": "/react-solt/static/media/slide3.ede3089489ee55151b95.jpg",
     "static/media/loneliness.png": "/react-solt/static/media/loneliness.8b09faf5028602d10f8f.png",
     "static/media/slide1.jpg": "/react-solt/static/media/slide1.dd8e98fb26d5a50e441e.jpg",
@@ -13,6 +13,7 @@
     "static/media/betrayal.jpg": "/react-solt/static/media/betrayal.0c5a2a42bacaa473116b.jpg",
     "static/media/anna.jpg": "/react-solt/static/media/anna.f69fa6ac1f33a02212de.jpg",
     "static/media/cta-bg.jpg": "/react-solt/static/media/cta-bg.451e893fff0d998a5c49.jpg",
+    "static/media/service1.jpg": "/react-solt/static/media/service1.c2b7e536c10383c9b5ee.jpg",
     "static/media/apathy.jpg": "/react-solt/static/media/apathy.f0a3bcd68ee9eae3d8d8.jpg",
     "static/media/slide2.jpg": "/react-solt/static/media/slide2.418c6f7fbbc3e5295ff4.jpg",
     "static/media/selfEsteem.jpg": "/react-solt/static/media/selfEsteem.a87c986e1ad886e7928c.jpg",
@@ -24,11 +25,11 @@
     "static/media/vk.svg": "/react-solt/static/media/vk.1d35eac8a74239ca722ed5f46f2af401.svg",
     "index.html": "/react-solt/index.html",
     "static/media/tg.svg": "/react-solt/static/media/tg.13533387310c8229738b6168894819f8.svg",
-    "main.a6b67cd5.css.map": "/react-solt/static/css/main.a6b67cd5.css.map",
-    "main.bdfd37ed.js.map": "/react-solt/static/js/main.bdfd37ed.js.map"
+    "main.4b1439b6.css.map": "/react-solt/static/css/main.4b1439b6.css.map",
+    "main.30c3e66d.js.map": "/react-solt/static/js/main.30c3e66d.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6b67cd5.css",
-    "static/js/main.bdfd37ed.js"
+    "static/css/main.4b1439b6.css",
+    "static/js/main.30c3e66d.js"
   ]
 }
