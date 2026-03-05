@@ -1,7 +1,8 @@
 import { useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+
 import { categories } from '../../data/categories'
 import { specialists } from '../../data/specialistsData'
-import { Link } from 'react-router-dom'
 import './сategoryDetail.scss'
 
 const CategoryDetail = () => {

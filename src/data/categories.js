@@ -1,18 +1,19 @@
-import depression from '../assets/images/categories/depression.jpg'
-import relations from '../assets/images/categories/relations.jpg'
-import fears from '../assets/images/categories/fears.jpg'
 import apathy from '../assets/images/categories/apathy.jpg'
-import meaning from '../assets/images/categories/meaning.jpg'
 import betrayal from '../assets/images/categories/betrayal.jpg'
-import ocd from '../assets/images/categories/ocd.png'
+import depression from '../assets/images/categories/depression.jpg'
+import fears from '../assets/images/categories/fears.jpg'
 import loneliness from '../assets/images/categories/loneliness.png'
+import meaning from '../assets/images/categories/meaning.jpg'
+import ocd from '../assets/images/categories/ocd.png'
+import relations from '../assets/images/categories/relations.jpg'
 import selfEsteem from '../assets/images/categories/selfEsteem.jpg'
 
 export const categories = [
   {
     id: 'depression',
     title: 'Депрессия',
-    shortText: 'Подавленное состояние и потеря интереса к жизни.',
+    shortText:
+      'Подавленное состояние и потеря интереса к жизни. еловеку становится трудно радоваться, концентрироваться и принимать решения.',
     description: [
       'Депрессия — это состояние эмоционального и физического истощения.',
       'Человеку становится трудно радоваться, концентрироваться и принимать решения.',

@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom'
+
 import { specialists } from '../../data/specialistsData'
 import './specialistPage.scss'
 

@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import './Header.scss'
-import logo from '../../assets/logo.svg'
+import { Link } from 'react-router-dom'
 
-import tg from '../../assets/icons/tg.svg'
-import vk from '../../assets/icons/vk.svg'
-import wa from '../../assets/icons/wa.svg'
+import './Header.scss'
+import Logo from '../../components/Logo/Logo'
+import Socials from '../../components/Socials/Socials'
+import { navigation } from '../../data/navigation'
 
 const Header = ({ onBookingClick }) => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -33,74 +32,27 @@ const Header = ({ onBookingClick }) => {
         <div className='header__container'>
           {/* LEFT BLOCK */}
           <div className='header__brand'>
-            <Link to='/' className='header__logo'>
-              <img src={logo} alt='Solt' />
-            </Link>
+            <Logo className='header__logo' />
           </div>
 
           {/* CENTER NAV */}
           <nav className='header__nav'>
-            <Link
-              to='/about'
-              className='header__link'
-              onClick={handleLinkClick}
-            >
-              О центре
-            </Link>
-
-            <Link
-              to='/categories'
-              className='header__link'
-              onClick={handleLinkClick}
-            >
-              Категории
-            </Link>
-
-            <Link
-              to='/services'
-              className='header__link'
-              onClick={handleLinkClick}
-            >
-              Услуги
-            </Link>
-
-            <Link
-              to='/specialists'
-              className='header__link'
-              onClick={handleLinkClick}
-            >
-              Специалисты
-            </Link>
-
-            <Link to='/blog' className='header__link' onClick={handleLinkClick}>
-              Статьи
-            </Link>
-
-            <Link
-              to='/contacts'
-              className='header__link'
-              onClick={handleLinkClick}
-            >
-              Контакты
-            </Link>
+            {navigation.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className='header__link'
+                onClick={handleLinkClick}
+              >
+                {item.label}
+              </Link>
+            ))}
           </nav>
 
           {/* RIGHT BLOCK */}
           <div className='header__actions'>
             {/* SOCIALS */}
-            <div className='header__socials'>
-              <a href='#'>
-                <img src={tg} alt='Telegram' />
-              </a>
-
-              <a href='#'>
-                <img src={vk} alt='VK' />
-              </a>
-
-              <a href='#'>
-                <img src={wa} alt='WhatsApp' />
-              </a>
-            </div>
+            <Socials className='header__socials' />
 
             <button className='btn' onClick={onBookingClick}>
               Записаться

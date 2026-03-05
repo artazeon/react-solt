@@ -1,8 +1,10 @@
 import { useState, useMemo } from 'react'
-import { specialists } from '../../data/specialistsData'
-import { categories } from '../../data/categories'
-import './specialists.scss'
 import { Link } from 'react-router-dom'
+
+import { categories } from '../../data/categories'
+import { specialists } from '../../data/specialistsData'
+
+import './specialists.scss'
 
 const Specialists = () => {
   const [selectedFilter, setSelectedFilter] = useState('Все')

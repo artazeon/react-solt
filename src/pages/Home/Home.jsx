@@ -1,20 +1,20 @@
 import './Home.scss'
-import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Link } from 'react-router-dom'
 import { Navigation, Autoplay, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+import centerImage from '../../assets/images/center/0.png'
 import BookingModal from '../../components/BookingModal/BookingModal.jsx'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 import HeroSlider from '../../components/HeroSlider/HeroSlider.jsx'
-import centerImage from '../../assets/images/center.png'
-
-import { specialists } from '../../data/specialistsData'
-import { categories } from '../../data/categories'
 import { advantages } from '../../data/advantages'
+import { categories } from '../../data/categories'
 import { reviews } from '../../data/reviews'
+import { specialists } from '../../data/specialistsData'
 
 const Home = () => {
   const [open, setOpen] = useState(false)

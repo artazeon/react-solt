@@ -1,8 +1,9 @@
 import { Link, useLocation } from 'react-router-dom'
+
+import { blogData } from '../../data/blogData'
 import { categories } from '../../data/categories'
 import { services } from '../../data/servicesData'
 import { specialists } from '../../data/specialistsData'
-import { blogData } from '../../data/blogData'
 
 import './breadcrumbs.scss'
 

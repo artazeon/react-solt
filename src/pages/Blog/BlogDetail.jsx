@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom'
+
 import { blogData } from '../../data/blogData'
 import './blogDetail.scss'
 

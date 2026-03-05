@@ -1,6 +1,5 @@
 .about-page {
   padding: 50px 20px;
-  background: #f9fafb;
 
   .container {
     max-width: 1200px;
@@ -10,6 +9,7 @@
   h1 {
     font-size: 44px;
     margin-bottom: 24px;
+    text-align: center;
   }
 
   h2 {
@@ -31,7 +31,7 @@
 }
 
 .about-hero {
-  max-width: 800px;
+  max-width: 1200px;
   margin-bottom: 80px;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .about-team {
-  max-width: 800px;
+  max-width: 1200px;
 }
 
 .about-visual {
@@ -94,7 +94,7 @@
   border-radius: 30px;
   overflow: hidden;
 
-  background-image: url('../../assets/images/center.png'); // положи картинку в public/images
+  background-image: url('../../assets/images/center/0.png'); // положи картинку в public/images
   background-size: cover;
   background-position: center;
 
@@ -113,7 +113,7 @@
 
   &__content {
     position: relative;
-    max-width: 700px;
+    max-width: 1200px;
     padding: 0 20px;
 
     h2 {

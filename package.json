@@ -29,7 +29,30 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "plugins": [
+      "import"
+    ],
+    "rules": {
+      "import/order": [
+        "error",
+        {
+          "groups": [
+            "builtin",
+            "external",
+            "internal",
+            "parent",
+            "sibling",
+            "index"
+          ],
+          "newlines-between": "always",
+          "alphabetize": {
+            "order": "asc",
+            "caseInsensitive": true
+          }
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -44,6 +67,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-plugin-import": "^2.32.0",
     "gh-pages": "^6.3.0"
   }
 }

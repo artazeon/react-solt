@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom'
 
-import logo from '../../assets/logo.svg'
-import tg from '../../assets/icons/tg.svg'
-import vk from '../../assets/icons/vk.svg'
-import wa from '../../assets/icons/wa.svg'
+import Logo from '../../components/Logo/Logo'
+import Socials from '../../components/Socials/Socials'
+import { navigation } from '../../data/navigation'
 import './Footer.scss'
 
 const Footer = ({ onBookingClick }) => {
@@ -12,28 +11,14 @@ const Footer = ({ onBookingClick }) => {
       <div className='footer__container'>
         <div className='footer__top'>
           <div className='footer__brand'>
-            <Link to='/' className='footer__logo'>
-              <img src={logo} alt='Solt' />
-            </Link>
+            <Logo className='footer__logo' />
             <p className='footer__description'>
               Центр психологической поддержки и индивидуальной терапии.
             </p>
-            <div className='footer__socials'>
-              <a href='#'>
-                <img src={tg} alt='Telegram' />
-              </a>
-              <a href='#'>
-                <img src={vk} alt='VK' />
-              </a>
-              <a href='#'>
-                <img src={wa} alt='WhatsApp' />
-              </a>
-            </div>
-
+            <Socials className='footer__socials' />
             <button
               className='btn btn--outline footer__button'
               onClick={onBookingClick}
-              className='btn'
             >
               Записаться
             </button>
@@ -42,36 +27,13 @@ const Footer = ({ onBookingClick }) => {
           <div className='footer__nav'>
             <h4 className='footer__title'>Навигация</h4>
             <ul className='footer__list'>
-              <li>
-                <Link to='/about' className='footer__link'>
-                  О центре
-                </Link>
-              </li>
-              <li>
-                <Link to='/categories' className='footer__link'>
-                  Категории
-                </Link>
-              </li>
-              <li>
-                <Link to='/services' className='footer__link'>
-                  Услуги
-                </Link>
-              </li>
-              <li>
-                <Link to='/specialists' className='footer__link'>
-                  Специалисты
-                </Link>
-              </li>
-              <li>
-                <Link to='/blog' className='footer__link'>
-                  Статьи
-                </Link>
-              </li>
-              <li>
-                <Link to='/contacts' className='footer__link'>
-                  Контакты
-                </Link>
-              </li>
+              {navigation.map((item) => (
+                <li key={item.path}>
+                  <Link to={item.path} className='footer__link'>
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -84,7 +46,8 @@ const Footer = ({ onBookingClick }) => {
         </div>
 
         <div className='footer__bottom'>
-          © {new Date().getFullYear()} Solt. Все права защищены.
+          © {new Date().getFullYear()} Психологический центр Solt. Все права
+          защищены.
         </div>
       </div>
     </footer>
