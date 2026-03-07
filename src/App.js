@@ -17,14 +17,14 @@ import ServiceDetail from './pages/Services/ServiceDetail.jsx'
 import Services from './pages/Services/Services.jsx'
 import SpecialistPage from './pages/Specialists/SpecialistPage.jsx'
 import Specialists from './pages/Specialists/Specialists.jsx'
-
 function App() {
   const [isBookingOpen, setBookingOpen] = useState(false)
 
   const openBooking = () => setBookingOpen(true)
   const closeBooking = () => setBookingOpen(false)
   return (
-    <BrowserRouter basename='/react-solt'>
+    // <BrowserRouter basename='/react-solt'>
+    <BrowserRouter>
       <ScrollToTop />
       <Header onBookingClick={() => setBookingOpen(true)} />
       <Breadcrumbs />

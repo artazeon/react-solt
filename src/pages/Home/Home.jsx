@@ -9,7 +9,6 @@ import BookingModal from '../../components/BookingModal/BookingModal.jsx'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-
 import HeroSlider from '../../components/HeroSlider/HeroSlider.jsx'
 import { advantages } from '../../data/advantages'
 import { categories } from '../../data/categories'
@@ -58,7 +57,11 @@ const Home = () => {
 
           <div className='home__grid'>
             {categories.map((item, index) => (
-              <Link key={index} to='/categories' className='home__card'>
+              <Link
+                key={index}
+                to={`/categories/${item.id}`}
+                className='home__card'
+              >
                 <img
                   src={item.image}
                   alt={item.title}
@@ -186,7 +189,12 @@ const Home = () => {
                       <h3>{item.name}</h3>
                       <span className='home__specialist-role'>{item.role}</span>
                       <p>{item.text}</p>
-                      <button className='btn btn--outline'>Подробнее</button>
+                      <Link
+                        to={`/specialists/${item.id}`}
+                        className='btn btn--outline'
+                      >
+                        Подробнее
+                      </Link>
                     </div>
                   </div>
                 </SwiperSlide>
