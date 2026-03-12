@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/react-solt/static/css/main.8ac75e97.css",
-    "main.js": "/react-solt/static/js/main.7322480c.js",
+    "main.css": "/react-solt/static/css/main.0458e58a.css",
+    "main.js": "/react-solt/static/js/main.23013752.js",
     "static/media/slide3.jpg": "/react-solt/static/media/slide3.ede3089489ee55151b95.jpg",
     "static/media/loneliness.png": "/react-solt/static/media/loneliness.8b09faf5028602d10f8f.png",
     "static/media/specialist1.png": "/react-solt/static/media/specialist1.86d2d19d455eafcc6eb3.png",
     "static/media/slide1.jpg": "/react-solt/static/media/slide1.dd8e98fb26d5a50e441e.jpg",
     "static/media/ocd.png": "/react-solt/static/media/ocd.c627f7f2d2973e58a2f6.png",
-    "static/media/center.png": "/react-solt/static/media/center.6a7c0a4fcf124b5d0141.png",
+    "static/media/0.png": "/react-solt/static/media/0.6a7c0a4fcf124b5d0141.png",
+    "static/media/4.jpg": "/react-solt/static/media/4.b842eeeeee102f49de64.jpg",
     "static/media/meaning.jpg": "/react-solt/static/media/meaning.5f62b09fae649a785942.jpg",
     "static/media/slide4.jpg": "/react-solt/static/media/slide4.442406887a096dd9cf38.jpg",
     "static/media/relations.jpg": "/react-solt/static/media/relations.1bafe185670fe4561d15.jpg",
@@ -15,22 +16,26 @@
     "static/media/anna.jpg": "/react-solt/static/media/anna.f69fa6ac1f33a02212de.jpg",
     "static/media/cta-bg.jpg": "/react-solt/static/media/cta-bg.451e893fff0d998a5c49.jpg",
     "static/media/apathy.jpg": "/react-solt/static/media/apathy.f0a3bcd68ee9eae3d8d8.jpg",
+    "static/media/2.jpg": "/react-solt/static/media/2.417d8809a83483c2c699.jpg",
     "static/media/slide2.jpg": "/react-solt/static/media/slide2.418c6f7fbbc3e5295ff4.jpg",
     "static/media/selfEsteem.jpg": "/react-solt/static/media/selfEsteem.a87c986e1ad886e7928c.jpg",
+    "static/media/3.jpg": "/react-solt/static/media/3.893e1efbb2cd7b545c8d.jpg",
     "static/media/blog1.jpg": "/react-solt/static/media/blog1.a315aca41aab2263ca88.jpg",
     "static/media/service1.jpg": "/react-solt/static/media/service1.a315aca41aab2263ca88.jpg",
     "static/media/depression.jpg": "/react-solt/static/media/depression.d86e13f4a3b14a24dcc1.jpg",
+    "static/media/1.jpg": "/react-solt/static/media/1.d39b4da33ae5afad9630.jpg",
     "static/media/fears.jpg": "/react-solt/static/media/fears.8ffa6662ea575520ea9a.jpg",
     "static/media/logo.svg": "/react-solt/static/media/logo.f695addd2a5e66a5079d47a9097cb26f.svg",
     "static/media/wa.svg": "/react-solt/static/media/wa.e9005c2dc4a3da43920dfa83c1c0fd97.svg",
     "static/media/vk.svg": "/react-solt/static/media/vk.1d35eac8a74239ca722ed5f46f2af401.svg",
     "index.html": "/react-solt/index.html",
     "static/media/tg.svg": "/react-solt/static/media/tg.13533387310c8229738b6168894819f8.svg",
-    "main.8ac75e97.css.map": "/react-solt/static/css/main.8ac75e97.css.map",
-    "main.7322480c.js.map": "/react-solt/static/js/main.7322480c.js.map"
+    "static/media/max.svg": "/react-solt/static/media/max.1946851480017c5c521da619bf8f697a.svg",
+    "main.0458e58a.css.map": "/react-solt/static/css/main.0458e58a.css.map",
+    "main.23013752.js.map": "/react-solt/static/js/main.23013752.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ac75e97.css",
-    "static/js/main.7322480c.js"
+    "static/css/main.0458e58a.css",
+    "static/js/main.23013752.js"
   ]
 }
