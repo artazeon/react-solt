@@ -212,7 +212,12 @@ const Home = () => {
                     <h3>{item.name}</h3>
                     <span className='home__specialist-role'>{item.role}</span>
                     <p>{item.text}</p>
-                    <button className='btn btn--outline'>Подробнее</button>
+                    <Link
+                      to={`/specialists/${item.id}`}
+                      className='btn btn--outline'
+                    >
+                      Подробнее
+                    </Link>
                   </div>
                 </div>
               ))}

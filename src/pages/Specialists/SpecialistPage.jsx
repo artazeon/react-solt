@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { specialists } from '../../data/specialistsData'
 import './specialistPage.scss'
 
-const SpecialistPage = () => {
+const SpecialistPage = ({ onBookingClick }) => {
   const { id } = useParams()
 
   const specialist = specialists.find((spec) => spec.id === Number(id))
@@ -40,15 +40,11 @@ const SpecialistPage = () => {
             ))}
           </ul>
         </div>
-        <div className='specialist-education'>
-          <h2>Образование и квалификация</h2>
-          <ul>
-            {specialist.education.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </div>
-        <button className='btn btn--primary specialist-book-btn'>
+
+        <button
+          className='btn btn--primary specialist-book-btn'
+          onClick={onBookingClick}
+        >
           Записаться на консультацию
         </button>
       </div>

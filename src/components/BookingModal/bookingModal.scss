@@ -1,52 +1,70 @@
-.booking {
-  &__overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-    animation: fadeIn 0.3s ease;
+.booking-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+}
+
+.booking-modal {
+  background: #fff;
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  border-radius: 24px;
+  position: relative;
+  animation: slideUp 0.3s ease;
+}
+
+.booking-modal h2 {
+  margin-bottom: 20px;
+}
+
+.booking-modal input,
+.booking-modal select,
+.booking-modal textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.booking-modal textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+.booking-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-
-  &__modal {
-    background: #fff;
-    width: 100%;
-    max-width: 450px;
-    padding: 40px;
-    border-radius: 24px;
-    position: relative;
-    animation: slideUp 0.3s ease;
-
-    h2 {
-      margin-bottom: 20px;
-    }
-
-    input,
-    select,
-    textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 15px;
-      border-radius: 12px;
-      border: 1px solid #ddd;
-      font-size: 14px;
-    }
-
-    textarea {
-      min-height: 100px;
-      resize: none;
-    }
+  to {
+    opacity: 1;
   }
+}
 
-  &__close {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    border: none;
-    background: none;
-    font-size: 20px;
-    cursor: pointer;
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

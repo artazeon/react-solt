@@ -39,9 +39,9 @@ const Footer = ({ onBookingClick }) => {
 
           <div className='footer__contacts'>
             <h4 className='footer__title'>Контакты</h4>
-            <p>Телефон: +375 (XX) XXX-XX-XX</p>
-            <p>Email: info@solt.by</p>
-            <p>Адрес: г. Минск</p>
+            <p>Телефон: +7 (999) 825-24-01</p>
+            <p>Email: info@solt-psy.ru</p>
+            <p>Адрес: г. Москва</p>
           </div>
         </div>
 

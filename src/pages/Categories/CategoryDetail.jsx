@@ -57,7 +57,6 @@ const CategoryDetail = () => {
             ))}
           </ul>
         </div>
-        <h2>Подходящие специалисты</h2>
 
         <div className='category-specialists'>
           <h2>Подходящие специалисты</h2>

@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import { services } from '../../data/servicesData'
 import './ServiceDetail.scss'
 
-const ServiceDetail = () => {
+const ServiceDetail = ({ onBookingClick }) => {
   const { id } = useParams()
 
   const service = services.find((item) => item.id === id)
@@ -53,7 +53,9 @@ const ServiceDetail = () => {
           </p>
         </div>
 
-        <button className='btn'>Записаться</button>
+        <button className='btn' onClick={onBookingClick}>
+          Записаться
+        </button>
 
         <div style={{ marginTop: '30px' }}>
           <Link to='/services' className='btn btn--outline'>

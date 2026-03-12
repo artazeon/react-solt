@@ -35,21 +35,67 @@ const BookingModal = ({ isOpen, onClose }) => {
     })
   }
 
-  const handleSubmit = (e) => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+
+  //   console.log('Заявка:', formData)
+
+  //   alert('Спасибо! Заявка принята.')
+
+  //   setFormData({
+  //     name: '',
+  //     phone: '',
+  //     service: '',
+  //     message: '',
+  //   })
+
+  //   onClose()
+  // }
+
+  const handleSubmit = async (e) => {
     e.preventDefault()
 
-    console.log('Заявка:', formData)
+    const BOT_TOKEN = 'ТВОЙ_BOT_TOKEN'
+    const CHAT_ID = 'ТВОЙ_CHAT_ID'
 
-    alert('Спасибо! Заявка принята.')
+    const text = `
+📩 Новая заявка с сайта
 
-    setFormData({
-      name: '',
-      phone: '',
-      service: '',
-      message: '',
-    })
+👤 Имя: ${formData.name}
+📞 Телефон: ${formData.phone}
+💬 Услуга: ${formData.service}
+📝 Комментарий: ${formData.message}
+Страница: ${window.location.href}
+`
 
-    onClose()
+    try {
+      await fetch(
+        `https://api.telegram.org/bot${'8632622350:AAEAa5oJglSohNUEjJkQDQzqmDXlfwuq_JE'}/sendMessage`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            chat_id: '-5021611160',
+            text: text,
+          }),
+        },
+      )
+
+      alert('Спасибо! Заявка отправлена.')
+
+      setFormData({
+        name: '',
+        phone: '',
+        service: '',
+        message: '',
+      })
+
+      onClose()
+    } catch (error) {
+      alert('Ошибка отправки. Попробуйте позже.')
+    }
   }
 
   if (!isOpen) return null

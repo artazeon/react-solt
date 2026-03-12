@@ -17,23 +17,50 @@ const BookingForm = ({ onSuccess }) => {
     })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
 
-    console.log('Заявка:', formData)
+    const BOT_TOKEN = '8632622350:AAEAa5oJglSohNUEjJkQDQzqmDXlfwuq_JE'
+    const CHAT_ID = '-5021611160'
 
-    alert('Спасибо! Мы свяжемся с вами.')
+    const text = `
+📩 Новый вопрос с сайта
 
-    setFormData({
-      name: '',
-      phone: '',
-      email: '',
-      message: '',
-      service: '',
-    })
+👤 Имя: ${formData.name}
+📞 Телефон: ${formData.phone}
+📧 Email: ${formData.email}
+📝 Сообщение: ${formData.message}
 
-    if (onSuccess) {
-      onSuccess()
+🌐 Страница: ${window.location.href}
+`
+
+    try {
+      await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          chat_id: CHAT_ID,
+          text: text,
+        }),
+      })
+
+      alert('Спасибо! Мы свяжемся с вами.')
+
+      setFormData({
+        name: '',
+        phone: '',
+        email: '',
+        message: '',
+        service: '',
+      })
+
+      if (onSuccess) {
+        onSuccess()
+      }
+    } catch (error) {
+      alert('Ошибка отправки. Попробуйте позже.')
     }
   }
 

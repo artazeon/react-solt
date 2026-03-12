@@ -34,9 +34,19 @@ function App() {
         <Route path='/categories' element={<Categories />} />
         <Route path='/categories/:id' element={<CategoryDetail />} />
         <Route path='/services' element={<Services />} />
-        <Route path='/services/:id' element={<ServiceDetail />} />
+        <Route
+          path='/services/:id'
+          element={
+            <ServiceDetail onBookingClick={() => setBookingOpen(true)} />
+          }
+        />
         <Route path='/specialists' element={<Specialists />} />
-        <Route path='/specialists/:id' element={<SpecialistPage />} />
+        <Route
+          path='/specialists/:id'
+          element={
+            <SpecialistPage onBookingClick={() => setBookingOpen(true)} />
+          }
+        />
         <Route path='/blog' element={<Blog />} />
         <Route path='/blog/:id' element={<BlogDetail />} />
         <Route path='/contacts' element={<Contacts />} />

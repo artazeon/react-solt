@@ -31,9 +31,23 @@
   }
 
   .role {
-    font-size: 20px;
-    color: var(--accent-color);
-    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 18px;
+    color: #ffa600;
+    padding: 6px 16px;
+    border-radius: 30px;
+    background: linear-gradient(
+      90deg,
+      rgba(212, 175, 55, 0.25),
+      rgba(212, 175, 55, 0.05)
+    );
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+
+  .specialist-header div {
+    padding-top: 10px;
   }
 
   .experience {
@@ -72,8 +86,9 @@
     gap: 30px;
 
     img {
-      width: 200px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
     }
   }
 

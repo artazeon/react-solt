@@ -21,17 +21,17 @@ export default function ContactsPage() {
 
             <div className='contact-card'>
               <h4>Телефон</h4>
-              <a href='tel:+79991234567'>+7 (999) 123-45-67</a>
+              <a href='tel:+79998252401'>+7 (999) 825-24-01</a>
             </div>
 
             <div className='contact-card'>
               <h4>E-mail</h4>
-              <a href='mailto:info@psycenter.ru'>info@psycenter.ru</a>
+              <a href='mailto:info@solt-psy.ru'>info@solt-psy.ru</a>
             </div>
 
             <div className='contact-card'>
               <h4>Адрес</h4>
-              <p>г. Москва, ул. Примерная, 12</p>
+              <p>г. Москва</p>
             </div>
 
             <div className='contact-card'>
@@ -65,13 +65,13 @@ export default function ContactsPage() {
         {/* Реквизиты */}
         <div className='contacts-requisites'>
           <h2>Реквизиты</h2>
-          <p>ООО «Психологический центр Баланс»</p>
-          <p>ОГРН 1234567890123</p>
-          <p>ИНН 7700000000</p>
+          <p>ООО «Психологический центр Солт</p>
+          <p>ОГРН 00000000000000000000000000</p>
+          <p>ИНН 00000000000000000000000000</p>
           <p>Банк: ПАО «Сбербанк»</p>
-          <p>р/с 40702810000000000000</p>
-          <p>к/с 30101810400000000225</p>
-          <p>БИК 044525225</p>
+          <p>р/с 00000000000000000000000000</p>
+          <p>к/с 00000000000000000000000000</p>
+          <p>БИК 000000000</p>
         </div>
       </div>
     </section>
