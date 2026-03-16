@@ -20,9 +20,6 @@ const BookingForm = ({ onSuccess }) => {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    const BOT_TOKEN = '8632622350:AAEAa5oJglSohNUEjJkQDQzqmDXlfwuq_JE'
-    const CHAT_ID = '-5021611160'
-
     const text = `
 📩 Новый вопрос с сайта
 
@@ -35,15 +32,10 @@ const BookingForm = ({ onSuccess }) => {
 `
 
     try {
-      await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+      await fetch('/sendTelegram.php', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          chat_id: CHAT_ID,
-          text: text,
-        }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: text }),
       })
 
       alert('Спасибо! Мы свяжемся с вами.')
@@ -56,9 +48,7 @@ const BookingForm = ({ onSuccess }) => {
         service: '',
       })
 
-      if (onSuccess) {
-        onSuccess()
-      }
+      if (onSuccess) onSuccess()
     } catch (error) {
       alert('Ошибка отправки. Попробуйте позже.')
     }
